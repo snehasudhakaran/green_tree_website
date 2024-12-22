@@ -1,0 +1,155 @@
+/* Css Variables */
+
+:root{
+    /* colors */
+    --primary-color:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(10, 90, 8) 0%, rgb(18, 131, 8) 46%, rgb(17, 137, 6) 53%, rgba(19,140,7) 62%, 
+    rgba(20, 132, 5) 89%, rgb(25, 122, 10) 100%);
+    --title-color:  #197a0a;
+    --secondary-text-color:#48c5a7;
+    --primary-button-color: #31ae90;
+    --text-color: hsl(0,0%,50%);
+    --body-color: hsl(0,0%,100%);
+    --container-color: hsl(0,0%,93%);
+    --border-color: hsl(0,0%,87%);
+    --text-white: #fff;
+    --table-color: #e6f7f8;
+    --table-border-color: #32d7e0;
+    --table-header: #00b2bd;
+    --text-black:#0B0B0B;
+  
+    /* font and typography */
+    
+    --body-font:  'DM Sans', sans-serif;
+    --second-font: 'Poppins', sans-serif;
+    --location-font: 'Juana It', serif;
+  
+    --big-font-size: 56px;
+    --h1-font-size: 45px;
+    --h2-font-size: 32px;
+    --h3-font-size: 24px;
+    --navbar-font-size: 20px;
+    --large-font-size: 18px;
+    --normal-font-size: 16px;
+    --small-font-size: 15px;
+    --smaller-font-size: 14px;
+    --tiny-font-size: 12px;
+  
+    /* Font weight */
+    --weight-400 : 400;
+    --weight-500 : 500;
+    --weight-600 : 600;
+    --weight-700 : 700;
+    --weight-800 : 800;
+  }
+  
+  /* Base */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: var(--body-font);
+    /* background: var(--primary-color); */
+  }
+
+.Main-section{
+  background-image: url('../images/banner-img.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.header{
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+.header .title, .header .menu-item{
+    font-size: var(--navbar-font-size);
+    font-weight: var(--weight-600);
+    color: var(--title-color);
+}
+
+.header .contact-button{
+    font-size: var(--navbar-font-size);
+    background-color: var(--title-color);
+    color: var(--body-color);
+    border-radius: 50px;
+}
+
+/* .banner{
+    border-bottom: 1px solid #ddd;
+} */
+
+.banner-header .buttons{
+    font-size: var(--navbar-font-size);
+}
+
+
+.header.scrolled {
+    background-color: white;
+    color: var(--text-black);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled .mobile-view-nav-menu svg {
+  fill: black; /* Changes the SVG fill color to black */
+  color: black; /* Also changes the stroke color if needed */
+}
+
+.header.scrolled .contact-button:hover{
+  border: 1px solid var(--secondary-text-color);
+  background-color: white;
+  color:var(--secondary-text-color);
+}
+
+  /* navbar section */
+.brand-name h1{
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.desktop-menu-items a:hover{
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: var(--third-color);
+}
+
+#active{
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: var(--third-color);
+    color:white;
+}
+
+.desktop-menuItems-contactButton{
+    background-color: var(--primary-button-color);
+    padding: 5px 30px;
+}
+
+/* Banner Section */
+.banner-section-info{
+    font-family: 'Sora', sans-serif;
+}
+
+.banner-section-info .banner-header h1{
+    line-height: 1.3em;
+    outline: none;
+}
+
+.banner-shadow{
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.hover-shadow:hover{
+  box-shadow: 0px 10px 50px rgba(97, 96, 96, 0.5);
+}
+
+.banner-shadow-dashboard{
+  /* box-shadow: 0px 5px 70px rgba(196, 194, 194, 0.5); */
+  border-radius: 10px;
+}

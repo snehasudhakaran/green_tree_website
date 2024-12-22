@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciel</title>
+    <link rel="icon" href="./assets/images/logo.png" type="x-image/icon"/>
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Juana:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body class=" text-white">
+
+    <div class="Main-section">
+        <header class="header fixed inset-x-0 top-0 z-50 py-4 container mx-auto px-4 w-full  bg-white transition-colors duration-300 ">
+            <div class="">
+                <nav class="flex items-center justify-between" aria-label="Global">
+                    <!-- Logo Section -->
+                    <div class="flex lg:flex-1">
+                        <a href="/" class="flex items-center title">
+                            <!-- <img src="./assets/images/logo.png" alt="CIEL Logo" id="logo" class="h-[55px] w-auto"> -->
+                            <p>GREEN TREE</p>
+                        </a>
+                    </div>
+        
+                    <!-- Mobile Menu Button -->
+                    <div class="lg:hidden flex mobile-view-nav-menu">
+                        <button type="button"
+                            class="menu-button inline-flex items-center justify-center rounded-md p-2.5 text-white">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+        
+                    <!-- Desktop Menu Items -->
+                    <div class="hidden lg:flex lg:gap-x-16 items-center">
+                        <div class="lg:flex lg:gap-x-16">
+                            <a href="./index.html" class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item">Home</a>
+                            <a href="./about.html" class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item">About us</a>
+                            <a href="./blog.html" class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item">Our Services</a>
+                            <!-- Dropdown for Services -->
+                            <div class="relative group">
+                                <a href="#"
+                                    class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item flex items-center">
+                                    Projects
+                                    <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                <!-- Dropdown Menu -->
+                                <div
+                                    class="absolute hidden group-hover:block bg-white text-black rounded-lg mt-[2px] py-2 w-[200px] shadow-lg border">
+                                    <a href="./all_services.html" class="block px-4 py-3 hover:bg-gray-100">Ongoing Projects</a>
+                                    <a href="./PM_service_page.html" class="block px-4 py-3 hover:bg-gray-100">Perfomance Marketing </a>
+                                </div>
+                            </div>
+    
+                        </div>
+        
+                        <!-- Contact Button -->
+                        <div>
+                            <a href="./contact.html">
+                                <button
+                                    class="contact-button px-6 py-3 rounded flex items-center gap-2 hover:border hover:border-[#197a0a] transition-colors duration-300">
+                                    <p class="font-extrabold">Contact Us</p>
+                                    <span class="flex items-center font-extrabold">
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        
+            <!-- Mobile Menu -->
+            <div class="lg:hidden mobile-nav hidden" role="dialog" aria-modal="true">
+                <div class="fixed inset-0 z-50 bg-[#0b0219] opacity-80"></div>
+                <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-2 sm:max-w-sm">
+                    <div class="flex items-center justify-between mb-4 mt-2">
+                        <a href="/" class="flex items-center">
+                            <!-- <img src="./assets/images/logoBlack.png" alt="CIEL Logo" id="logo" class="h-[50px] w-auto"> -->
+                            <p>GREEN TREE</p>
+                        </a>
+                        <button type="button" class="rounded-md text-[#0b0219] menu-close">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+        
+                    <!-- Mobile Dropdown -->
+                    <div class="mt-6 flow-root text-[#0b0219]">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="./index.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-bold hover:bg-gray-50 hover:text-[#0b0219]">Home</a>
+                                <a href="./about.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">About
+                                    us</a>
+        
+                                <!-- Services Dropdown -->
+                                <div class="services-dropdown relative ">
+                                    <button id="dropdownToggle"
+                                        class="w-full text-left block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">
+                                        Services
+                                        <svg class="inline ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+        
+                                    <div class="hidden services-dropdown-content bg-white text-[#0b0219]" id="dropdownMenu">
+                                        <a href="./all_services.html" class="block px-4 py-2 hover:bg-gray-100">All services </a>
+                                    <a href="./PM_service_page.html" class="block px-4 py-2 hover:bg-gray-100">Perfomance Marketing </a>
+                                    <a href="./PPC&SEM.html" class="block px-4 py-2 hover:bg-gray-100">PPC & SEM</a>
+                                    <a href="./social_media_management.html" class="block px-4 py-2 hover:bg-gray-100">Branding & Social Media Management</a>
+                                    <a href="./SEO.html" class="block px-4 py-2 hover:bg-gray-100">Search Engine Optimization </a>
+                                    <a href="./website_desgin.html" class="block px-4 py-2 hover:bg-gray-100">Website Design & Development </a>
+                                    <a href="./data_analysis.html" class="block px-4 py-2 hover:bg-gray-100">Data Analytics</a>
+                                    </div>
+                                </div>
+        
+                                <a href="./career.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">Career</a>
+                                <a href="./blog.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">Blog</a>
+                                <a href="./contact.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Banner Section -->
+        <div class="px-6 banner">
+        <section
+            class="pt-[150px] md:pt-[150px] lg:pt-[250px] pb-[200px] container mx-auto px-4  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 flex justify-center items-center">
+            <div class="banner-section-info ">
+                <div class="banner-header">
+                    <h1 class="text-[35px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-extrabold text-center mb-10" data-aos="flip-right">
+                        Leading the Charge Towards Renewable Excellence with Clean, Green Energy
+                    </h1>
+                    <p class="text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-center" data-aos="flip-left">
+                        SUNKIND Energy emerges as a leading solar Engineering, Procurement, and Construction (EPC) company, joining the list of the best solar power developers. At the forefront of renewable excellence, we advocate and embrace innovation, dedicating our continuous efforts to providing clean, green energy solutions.
+                    </p>
+                    <div class="flex justify-center gap-5 mt-10 buttons">
+                        <div data-aos="zoom-out">
+                            <a href="./contact.html">
+                            <button
+                                class="contact-button border border-[#fff] text-[#197a0a] px-[30px] py-2 rounded-md flex items-center gap-2 hover:bg-[transparent] hover:text-[#fff] bg-[#fff] transition-colors duration-300 ">
+                                <p class="font-medium">Services</p>
+                            </button>
+                        </a>
+                        </div>
+                        <div data-aos="zoom-out">
+                            <a href="./contact.html">
+                            <button
+                                class="contact-button border border-[#fff] text-[#fff] px-[30px] py-2 rounded-md flex items-center gap-2 hover:bg-[#fff] hover:text-[#197a0a] transition-colors duration-300 ">
+                                <p class="font-medium">Contact Us</p>
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <!-- Banner Section -->
+    </div>
+
+    <!-- Sun Powdered Services -->
+    <div class="container mx-auto px-4 text-black pt-14 my-20">
+        <div class="flex justify-between">
+            <div>
+                <p class="title font-extrabold text-[30px] sm:text-[30px] md:text-[35px] lg:text-[40px] "
+                >Our Sun-Powered
+                Services</p>
+            </div>
+            <div>
+                <a href="./contact.html">
+                    <button
+                        class="contact-button px-6 py-3 rounded flex items-center gap-2 hover:border hover:border-[#197a0a] bg-[#197a0a] text-[#fff] hover:bg-[transparent] hover:text-[#197a0a] transition-colors duration-300 text-[20px]">
+                        <p class="font-extrabold">Explore Services</p>
+                        <span class="flex items-center font-extrabold">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <hr class="mt-[30px] mb-5">
+        <p class="text-[18px] lg:text-[20px]">We aim to make our best contributions to a sustainable world through our services. Here’s how we fuel your journey through clean energy solutions.</p>
+        <div id="carousel-wrapper" class="relative mt-10">
+            <!-- Left Arrow -->
+            <button
+              id="prev"
+              class="absolute left-[-60px] top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white rounded-full p-3 py-2 hover:bg-gray-700 focus:outline-none"
+            >
+              &#8592;
+            </button>
+          
+            <!-- Blog Carousel -->
+            <div id="carousel-container" class="overflow-hidden">
+              <div id="blog-container" class="flex gap-8">
+                <!-- Dynamic blog posts will be appended here -->
+              </div>
+            </div>
+          
+            <!-- Right Arrow -->
+            <button
+              id="next"
+              class="absolute right-[-30px] top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white rounded-full p-3 py-2 hover:bg-gray-700 focus:outline-none"
+            >
+              &#8594;
+            </button>
+          </div>
+          
+    </div>
+    <!-- Sun powered Services -->
+
+    <div  class="px-4">
+        <div id="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 overflow-hidden">
+            <div  class="
+            bg-white
+            rounded-lg
+            cursor-pointer
+            border
+            border-grey
+            p-2
+            ">
+                <img class=" " src="${blog.image}" alt="${blog.title}">
+                <div class="p-6">
+                  <h2 class="text-2xl text-black font-bold mb-2">Kickstart Your Solar Journey</h2>
+                  <p class="text-gray-700 mb-4">Start your sustainable solar journey with a simple chat with our seasoned solar energy consultants. It is as easy as that!</p>
+                </div>
+              </div>
+              <div  class="
+              bg-white
+              rounded-lg
+              cursor-pointer
+              border
+              border-grey
+              p-2
+              ">
+                <img class=" " src="${blog.image}" alt="${blog.title}">
+                <div class="p-6">
+                  <h2 class="text-2xl text-black font-bold mb-2">Crafting Brilliance: Design + Installation</h2>
+                  <p class="text-gray-700 mb-4">Be a witness as our dedicated team fabricates a unique solar energy system that fits your exact electricity consumption needs. From design to installation, they handle it all!</p>
+                </div>
+              </div>
+              <div  class="
+              bg-white
+              rounded-lg
+              cursor-pointer
+              border
+              border-grey
+              p-2
+              ">
+                <img class=" " src="${blog.image}" alt="${blog.title}">
+                <div class="p-6">
+                  <h2 class="text-2xl text-black font-bold mb-2">Hassle-Free Solar Experience</h2>
+                  <p class="text-gray-700 mb-4">Say goodbye to the headaches of inspections, permits, and paperwork. We've got you covered as your trusted solar companions. See a seamless solar transition!</p>
+                </div>
+              </div>
+          </div>
+    </div>
+
+    <!-- Latest Reads -->
+    <div class="container mx-auto px-4 text-black pt-14 my-20">
+        <div class="flex justify-between">
+            <div>
+                <p class="title font-extrabold text-[30px] sm:text-[30px] md:text-[35px] lg:text-[40px] "
+                >Latest Reads</p>
+            </div>
+            <div>
+                <a href="./contact.html">
+                    <button
+                        class="contact-button px-6 py-3 rounded flex items-center gap-2 hover:border hover:border-[#197a0a] bg-[#197a0a] text-[#fff] hover:bg-[transparent] hover:text-[#197a0a] transition-colors duration-300 text-[20px]">
+                        <p class="font-extrabold">Latest Us</p>
+                        <span class="flex items-center font-extrabold">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <hr class="mt-[30px] mb-5">
+        <p class="text-[18px] lg:text-[20px]">Discover the Latest in Solar Energy!</p>
+        <div id="carousel-wrapper" class="relative mt-10">
+            <!-- Left Arrow -->
+            <button
+              id="prev"
+              class="absolute left-[-60px] top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white rounded-full p-3 py-2 hover:bg-gray-700 focus:outline-none"
+            >
+              &#8592;
+            </button>
+          
+            <!-- Blog Carousel -->
+            <div id="carousel-container" class="overflow-hidden">
+              <div id="blog-container" class="flex gap-8">
+                <!-- Dynamic blog posts will be appended here -->
+              </div>
+            </div>
+          
+            <!-- Right Arrow -->
+            <button
+              id="next"
+              class="absolute right-[-30px] top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white rounded-full p-3 py-2 hover:bg-gray-700 focus:outline-none"
+            >
+              &#8594;
+            </button>
+          </div>
+          
+    </div>
+    <!-- Latest Reads -->
+
+    <!-- Reach out to Us -->
+    <div class="container mx-auto px-4 text-black pt-14">
+        <div class="flex justify-between">
+            <div>
+                <p class="title font-extrabold text-[30px] sm:text-[30px] md:text-[35px] lg:text-[40px] "
+                >Reach Out to Us</p>
+            </div>
+            <div>
+                <a href="./contact.html">
+                    <button
+                        class="contact-button px-6 py-3 rounded flex items-center gap-2 hover:border hover:border-[#197a0a] bg-[#197a0a] text-[#fff] hover:bg-[transparent] hover:text-[#197a0a] transition-colors duration-300 text-[20px]">
+                        <p class="font-extrabold">Contact Us</p>
+                        <span class="flex items-center font-extrabold">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <hr class="mt-[30px] mb-5">
+        <p class="text-[18px] lg:text-[20px]">Connect with the Power of Solar! Save Energy! Illuminate Your World!</p>
+    </div>
+    <div class="bg-[#197a0a] p-20 mt-10 text-center mb-20">
+        <div class="container mx-auto">
+            <h1 class="text-[30px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-bold mb-5">Empower Your Tomorrow with SUNKIND</h1>
+            <p class="text-[18px] lg:text-[20px]">Embark on a solar journey of excellence with SUNKIND– the best solar power company in India. Do not worry if you're a business owner, an industrialist, involved in commercial projects, or a dedicated green advocate. We efficiently align with your esteemed values as we partner to provide sophisticated and sustainable energy solutions. It is time we unite and put to use the power of the sun for a greener future!</p>
+        </div>
+    </div>
+    <!-- Reach out to Us -->
+
+    <!-- FAQ Section -->
+    <div class="bg-white text-black mb-20">
+        <section class="container mx-auto px-4 pt-14 py-5">
+            <p class="title font-extrabold text-[30px] sm:text-[30px] md:text-[35px] lg:text-[40px] mb-[50px]"
+                >FAQ’s About Solar Company in India</p>
+    
+            <div class="flex flex-col gap-5  pb-10 " >
+                <div class="w-full">
+                    <!-- FAQ Item 1 -->
+                    <div class="mb-3 border py-4 px-4 rounded-md">
+                        <button class="w-full text-left rounded-md flex justify-between items-center focus:outline-none"
+                            onclick="toggleAnswer('faq1')">
+                            <span class="text-[18px] lg:text-[20px] font-medium text-gray-600">Q1. Which is the best solar company in India?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq1" class="hidden mt-3 rounded-md ">
+                            <p class="text-gray-500 text-[18px]">
+                                If you ask for the best solar company in India, Sunkind Energy is one of them. Our team of solar power developers comes up with innovative solar power solutions, specialising in renewable energy, clean green energy, and energy conservation.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <!-- FAQ Item 2 -->
+                    <div class="mb-3 border py-4 px-4 rounded-md">
+                        <button class="w-full text-left rounded-md flex justify-between items-center focus:outline-none"
+                            onclick="toggleAnswer('faq2')">
+                            <span class="text-[18px] lg:text-[20px] md:text-lg font-medium text-gray-600">Q2. What is Sunkind’s mission as the best solar power company in India?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq2" class="hidden mt-3 rounded-md ">
+                            <p class="text-gray-500 text-[18px]">
+                                As the best solar power company in India, our mission at SUNKIND India is to transform the energy industry. We see a future powered by sustainable technology, shining a bright light on a cleaner and brighter world as pioneers in solar solutions.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <!-- FAQ Item 3 -->
+                    <div class="mb-3 border py-4 px-4 rounded-md">
+                        <button class="w-full text-left rounded-md flex justify-between items-center focus:outline-none"
+                            onclick="toggleAnswer('faq3')">
+                            <span class="text-[18px] lg:text-[20px] md:text-lg font-medium text-gray-600">Q3. How does Sunkind value its clients?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq3" class="hidden mt-3 rounded-md ">
+                            <p class="text-gray-500 text-[18px]">
+                                Our clients are our main focus at SUNKIND as we apply the customer-centric philosophy to offer them solar power solutions. In order to guarantee a smooth and satisfying experience for our esteemed clients, we place a high priority on openness, honesty, and customised solutions.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <!-- FAQ Item 4 -->
+                    <div class="border py-4 px-4 rounded-md">
+                        <button class="w-full text-left rounded-md flex justify-between items-center focus:outline-none"
+                            onclick="toggleAnswer('faq4')">
+                            <span class="text-[18px] lg:text-[20px] md:text-lg font-medium text-gray-600">Q4. How is SUNKIND demonstrating its dedication to various projects in the field of renewable energy?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </button>
+                        <div id="faq4" class="hidden mt-3 rounded-md">
+                            <p class="text-gray-500 text-[18px]">
+                                SUNKIND is demonstrating its dedication to a variety of efforts in the sustainable energy environment by foraying into the manufacturing of modules, solar-plus-storage, EV charging infrastructure, energy efficiency, and various solar power solutions and technologies.
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- FAQ section -->
+
+    <!-- footer -->
+    <div class="bg-[#197a0a]">
+        <footer class=" container mx-auto px-4 pb-[50px] pt-5 ">
+            
+            <hr class="pb-[50px] ">
+            <div
+                class="container-fluid flex justify-between gap-y-[30px] flex-col lg:flex-row text-center text-[#3333333] pt-[5px]  pb-[5px] lg:pt-0 lg:pb-0  ">
+                <div class="text-left">
+                    <h1 class="text-[20px] lg:text-[24px] font-extrabold mb-3">Office Address</h1>
+                    <div class="flex flex-col flex-col gap-2 ">
+                        <a href="./index.html" class="flex text-[18px] ">(+91) 8800-228-181</a>
+                        <a href="./career.html" class="flex text-[18px]">info@sunkind.in
+                        </a>
+                        <p class="flex text-[18px]">9th Floor, Tower 1, 904-905, DLF CORPORATE GREENS,<br>
+                            Southern Peripheral Rd, Sector 74A, Haryana 122004,<br>
+                            Gurugram</p>
+                    </div>
+                    <div class="flex gap-5 items-center mt-4">
+                        <a href="mailto:" class="text-white text-[30px]">
+                            <ion-icon name="mail"></ion-icon>
+                        </a>
+                        <a href="./" target="_blank"
+                            class="text-white text-[30px]">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="./" target="_blank" class="text-white text-[30px]">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="./" target="_blank" class="text-white text-[30px]">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="./" target="_blank" class="text-white text-[30px]">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+        
+                    </div>
+                </div>
+                <div class="copyRight text-left">
+                    <h1 class="text-[20px] lg:text-[24px] font-extrabold mb-3">Useful Links</h1>
+                    <div class="flex flex-col flex-col gap-2 ">
+                        <a href="./index.html" class="flex text-[18px]">Home </a>
+                        <a href="./about.html" class="flex text-[18px]">About Us </a>
+                        <a href="./all_services.html" class=" flex text-[18px]">Our Services </a>
+                        <a href="./career.html" class="flex text-[18px]">Projects </a>
+                        <a href="./blog.html" class="flex text-[18px]">Contact Us</a>
+                    </div>
+                </div>
+                <div class="copyRight text-left">
+                    <h1 class="text-[20px] lg:text-[24px] font-extrabold mb-3">Our Services</h1>
+                    <div class="flex flex-col flex-col gap-2 ">
+                        <a href="./index.html" class="flex text-[18px]">Solar Rooftop</a>
+                        <a href="./about.html" class="flex text-[18px]">Ground Mount Solar</a>
+                        <a href="./all_services.html" class=" flex text-[18px]">Open Access Solar Power Plant</a>
+                        <a href="./career.html" class="flex text-[18px]">Capex Opex Solar Plants
+                        </a>
+                        <a href="./blog.html" class="flex text-[18px]">Solar Maintenance Plant</a>
+                    </div>
+                </div>
+              
+            </div>
+        </footer>
+    </div>
+    <!-- footer -->
+
+    <!-- FAQ Section script -->
+    <script>
+        // JavaScript to toggle FAQ answer visibility
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            answer.classList.toggle('hidden');
+            answer.classList.toggle('block');
+        }
+    </script>
+    <!--  -->
+
+    <!-- JQuery -->
+    <script src="./assets/javascript/jQuery.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- functionalities -->
+    <script src="./assets/javascript/navbar_functionality.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            fetch("blog.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    // Generate blog posts
+                    const blogContainer = document.getElementById("blog-container");
+                    data.forEach((blog) => {
+                        const blogPost = document.createElement("div");
+                        blogPost.classList.add(
+                            "bg-white",
+                            "rounded-lg",
+                            "overflow-hidden",
+                            "cursor-pointer",
+                            "border",
+                            "border-grey",
+                            "hover-shadow",
+                            "hover:border-none",
+                            "p-2",
+                            "w-[470px]",
+                            "flex-shrink-0"
+                        );
+        
+                        blogPost.innerHTML = `
+                    <div>
+                      <img class="w-full h-[300px] object-cover rounded-t-lg" src="${blog.image}" alt="${blog.title}">
+                      <div class="p-6">
+                        <h2 class="text-2xl text-black font-bold mb-2">${blog.title}</h2>
+                        <p class="text-gray-700 mb-4">${blog.description}</p>
+                        <a href="${blog.link}" class="text-indigo-500 hover:text-indigo-700 font-bold">Read More &rarr;</a>
+                      </div>
+                    </div>
+                  `;
+        
+                        // Append blog post to the container
+                        blogContainer.appendChild(blogPost);
+                    });
+                    initializeCarousel();
+                })
+                .catch((error) => console.error("Error fetching data:", error));
+        
+            })
+            function initializeCarousel() {
+                const blogContainer = document.getElementById("blog-container");
+                const prevButton = document.getElementById("prev");
+                const nextButton = document.getElementById("next");
+              
+                let scrollAmount = 0;
+                const scrollStep = 470; // Adjust this value based on the width of your blog cards
+                const maxScroll = blogContainer.scrollWidth - blogContainer.offsetWidth;
+              
+                // Scroll to the left
+                prevButton.addEventListener("click", () => {
+                  scrollAmount -= scrollStep;
+                  if (scrollAmount < 0) scrollAmount = 0;
+                  blogContainer.scrollTo({
+                    left: scrollAmount,
+                    behavior: "smooth",
+                  });
+                });
+              
+                // Scroll to the right
+                nextButton.addEventListener("click", () => {
+                  scrollAmount += scrollStep;
+                  if (scrollAmount > maxScroll) scrollAmount = maxScroll;
+                  blogContainer.scrollTo({
+                    left: scrollAmount,
+                    behavior: "smooth",
+                  });
+                });
+              }
+    </script>
+    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // JavaScript to handle dropdown toggle
+    const dropdownToggle = document.getElementById("dropdownToggle");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    // Event listener for toggle button
+    dropdownToggle.addEventListener("click", function () {
+        // Toggle the display of the dropdown menu
+        if (dropdownMenu.classList.contains("hidden")) {
+            dropdownMenu.classList.remove("hidden");
+        } else {
+            dropdownMenu.classList.add("hidden");
+        }
+    });
+
+    // Optional: Close the dropdown if the user clicks outside of it
+    window.addEventListener("click", function (event) {
+        if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.add("hidden");
+        }
+    });
+
+    </script>
+
+</body>
+
+</html>
