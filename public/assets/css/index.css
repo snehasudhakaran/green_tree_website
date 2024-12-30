@@ -1,155 +1,309 @@
 /* Css Variables */
 
 :root{
-    /* colors */
-    --primary-color:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(10, 90, 8) 0%, rgb(18, 131, 8) 46%, rgb(17, 137, 6) 53%, rgba(19,140,7) 62%, 
-    rgba(20, 132, 5) 89%, rgb(25, 122, 10) 100%);
-    --title-color:  #197a0a;
-    --secondary-text-color:#48c5a7;
-    --primary-button-color: #31ae90;
-    --text-color: hsl(0,0%,50%);
-    --body-color: hsl(0,0%,100%);
-    --container-color: hsl(0,0%,93%);
-    --border-color: hsl(0,0%,87%);
-    --text-white: #fff;
-    --table-color: #e6f7f8;
-    --table-border-color: #32d7e0;
-    --table-header: #00b2bd;
-    --text-black:#0B0B0B;
+  /* colors */
+  --primary-color:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(10, 90, 8) 0%, rgb(18, 131, 8) 46%, rgb(17, 137, 6) 53%, rgba(19,140,7) 62%, 
+  rgba(20, 132, 5) 89%, rgb(25, 122, 10) 100%);
+  --title-color:  #197a0a;
+  --secondary-text-color:#48c5a7;
+  --primary-button-color: #31ae90;
+  --text-color: hsl(0,0%,50%);
+  --body-color: hsl(0,0%,100%);
+  --container-color: hsl(0,0%,93%);
+  --border-color: hsl(0,0%,87%);
+  --text-white: #fff;
+  --table-color: #e6f7f8;
+  --table-border-color: #32d7e0;
+  --table-header: #00b2bd;
+  --text-black:#0B0B0B;
+
+  /* font and typography */
   
-    /* font and typography */
-    
-    --body-font:  'DM Sans', sans-serif;
-    --second-font: 'Poppins', sans-serif;
-    --location-font: 'Juana It', serif;
-  
-    --big-font-size: 56px;
-    --h1-font-size: 45px;
-    --h2-font-size: 32px;
-    --h3-font-size: 24px;
-    --navbar-font-size: 20px;
-    --large-font-size: 18px;
-    --normal-font-size: 16px;
-    --small-font-size: 15px;
-    --smaller-font-size: 14px;
-    --tiny-font-size: 12px;
-  
-    /* Font weight */
-    --weight-400 : 400;
-    --weight-500 : 500;
-    --weight-600 : 600;
-    --weight-700 : 700;
-    --weight-800 : 800;
-  }
-  
-  /* Base */
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  --body-font:  'DM Sans', sans-serif;
+  --second-font: 'Poppins', sans-serif;
+  --location-font: 'Juana It', serif;
+
+  --big-font-size: 56px;
+  --h1-font-size: 45px;
+  --h2-font-size: 32px;
+  --h3-font-size: 24px;
+  --navbar-font-size: 20px;
+  --large-font-size: 18px;
+  --normal-font-size: 16px;
+  --small-font-size: 15px;
+  --smaller-font-size: 14px;
+  --tiny-font-size: 12px;
+
+  /* Font weight */
+  --weight-400 : 400;
+  --weight-500 : 500;
+  --weight-600 : 600;
+  --weight-700 : 700;
+  --weight-800 : 800;
+}
+
+/* Base */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: var(--body-font);
-    /* background: var(--primary-color); */
-  }
+  font-family: var(--body-font);
+  /* background: var(--primary-color); */
+}
 
 .Main-section{
-  background-image: url('../images/banner-img.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
+background-image: url('../images/banner-img.svg');
+background-repeat: no-repeat;
+background-size: cover;
+height: 800px;
 }
 
 .header{
-    border-radius: 50px;
-    margin-top: 40px;
+  border-radius: 50px;
+  margin-top: 40px;
 }
 
 .header .title, .header .menu-item{
-    font-size: var(--navbar-font-size);
-    font-weight: var(--weight-600);
-    color: var(--title-color);
+  font-size: var(--navbar-font-size);
+  font-weight: var(--weight-600);
+  color: var(--title-color);
 }
 
 .header .contact-button{
-    font-size: var(--navbar-font-size);
-    background-color: var(--title-color);
-    color: var(--body-color);
-    border-radius: 50px;
+  font-size: var(--navbar-font-size);
+  background-color: var(--title-color);
+  color: var(--body-color);
+  border-radius: 50px;
 }
 
 /* .banner{
-    border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 } */
 
 .banner-header .buttons{
-    font-size: var(--navbar-font-size);
+  font-size: var(--navbar-font-size);
 }
 
 
 .header.scrolled {
-    background-color: white;
-    color: var(--text-black);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: var(--text-black);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header.scrolled .mobile-view-nav-menu svg {
-  fill: black; /* Changes the SVG fill color to black */
-  color: black; /* Also changes the stroke color if needed */
+fill: black; /* Changes the SVG fill color to black */
+color: black; /* Also changes the stroke color if needed */
 }
 
 .header.scrolled .contact-button:hover{
-  border: 1px solid var(--secondary-text-color);
-  background-color: white;
-  color:var(--secondary-text-color);
+border: 1px solid var(--secondary-text-color);
+background-color: white;
+color:var(--secondary-text-color);
 }
 
-  /* navbar section */
+/* navbar section */
 .brand-name h1{
-    font-weight: 100;
-    letter-spacing: 10px;
+  font-weight: 100;
+  letter-spacing: 10px;
 }
 
 .desktop-menu-items a:hover{
-    display: inline-block;
-    padding: 5px 20px;
-    border-radius: 30px;
-    background-color: var(--third-color);
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 30px;
+  background-color: var(--third-color);
 }
 
 #active{
-    padding: 5px 20px;
-    border-radius: 30px;
-    background-color: var(--third-color);
-    color:white;
+  padding: 5px 20px;
+  border-radius: 30px;
+  background-color: var(--third-color);
+  color:white;
 }
 
 .desktop-menuItems-contactButton{
-    background-color: var(--primary-button-color);
-    padding: 5px 30px;
+  background-color: var(--primary-button-color);
+  padding: 5px 30px;
 }
 
 /* Banner Section */
 .banner-section-info{
-    font-family: 'Sora', sans-serif;
+  font-family: 'Sora', sans-serif;
 }
 
 .banner-section-info .banner-header h1{
-    line-height: 1.3em;
-    outline: none;
+  line-height: 1.3em;
+  outline: none;
 }
 
 .banner-shadow{
-  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
 }
 
 .hover-shadow:hover{
-  box-shadow: 0px 10px 50px rgba(97, 96, 96, 0.5);
+box-shadow: 0px 10px 50px rgba(97, 96, 96, 0.5);
 }
 
 .banner-shadow-dashboard{
-  /* box-shadow: 0px 5px 70px rgba(196, 194, 194, 0.5); */
-  border-radius: 10px;
+/* box-shadow: 0px 5px 70px rgba(196, 194, 194, 0.5); */
+border-radius: 10px;
 }
+
+.logo{
+white-space: nowrap;
+position: relative;
+}
+
+.logo::before{
+position: absolute;
+top:0;
+left:0;
+width:250px;
+height: 100%;
+background: linear-gradient(to left, rgba(255,255,255,0), white);
+content:"";
+z-index: 2;
+}
+
+.logo::after{
+position: absolute;
+top:0;
+right:0;
+width:250px;
+height: 100%;
+background: linear-gradient(to right, rgba(255,255,255,0), white);
+content:"";
+z-index: 2;
+}
+
+.logo:hover .clients{
+animation-play-state: paused;
+}
+
+.clients{
+display: inline-block;
+animation: loopscroll 35s linear infinite;
+}
+
+.clients img{
+display: inline-block;
+height: 70px;
+/* width: 200px; */
+margin: 0 40px !important;
+}
+
+@keyframes loopscroll {
+from {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(-100%);
+}
+}
+
+/* ABOUT US PAGE STYLES */
+#header_bg::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(5, 5, 5, 0.4);
+  z-index: 3;
+}
+
+#header_bg video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+#header_bg h1 {
+  font-family: fantasy;
+  float: right;
+  color: white
+}
+
+.material-symbols-outlined {
+  font-size: 40px !important;
+}
+
+#why_us #why_cards {
+  outline: 1px solid black;
+  border: 1px solid black;
+  outline-offset: 2px;
+}
+
+#our_team .cards .card {
+  width: 100%;
+  height: 400px;
+  /* background-image: url('https://placehold.co/400'); */
+  display: flex;
+  align-items: end;
+  padding: 15px;
+}
+
+#our_team .cards .card .caption {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.303);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.301);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 200ms ease, background-color 600ms ease;
+}
+
+#our_team .cards .card:hover .caption {
+  height: 100%;
+  background-color: white;
+}
+
+.ad_banner {
+  background-image: url('https://placehold.co/1500X400'); /* PLACEHOLDER IMAGE */
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_bg {
+  height: 50vh;
+  background-image: url('../images/contact_us_banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: fantasy;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* OUR SERVICES PAGE STYLES */
+.our_services_banner {
+  width: 100%;
+  height: 500px;
+  background-image: url('../images/contact_us_banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.iso h1 {
+  font-family: fantasy;
+  color: white;
+}
+

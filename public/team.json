@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Tess Morgan",
+        "image": "https://placehold.co/400",
+        "desig": "Founder"
+    },
+    {
+        "name": "Harrison Wells",
+        "image": "https://placehold.co/400",
+        "desig": "CEO"
+    },
+    {
+        "name": "Barry Allen",
+        "image": "https://placehold.co/400",
+        "desig": "CTO"
+    },
+    {
+        "name": "Cisco Ramon",
+        "image": "https://placehold.co/400",
+        "desig": "Lead Engineer"
+    },
+    {
+        "name": "Caitlyn Snow",
+        "image": "https://placehold.co/400",
+        "desig": "Doctor"
+    },
+    {
+        "name": "Cisco Ramon",
+        "image": "https://placehold.co/400",
+        "desig": "Lead Engineer"
+    }
+]

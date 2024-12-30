@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - GreenTree</title>
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Juana:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header
+            class="header fixed inset-x-0 top-0 z-50 py-4 container mx-auto px-4 w-full  bg-white transition-colors duration-300 ">
+            <div class="">
+                <nav class="flex items-center justify-between" aria-label="Global">
+                    <!-- Logo Section -->
+                    <div class="flex lg:flex-1">
+                        <a href="/" class="flex items-center title">
+                            <!-- <img src="./assets/images/logo.png" alt="CIEL Logo" id="logo" class="h-[55px] w-auto"> -->
+                            <p>GREEN TREE</p>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="lg:hidden flex mobile-view-nav-menu">
+                        <button type="button"
+                            class="menu-button inline-flex items-center justify-center rounded-md p-2.5 text-white">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Desktop Menu Items -->
+                    <div class="hidden lg:flex lg:gap-x-16 items-center">
+                        <div class="lg:flex lg:gap-x-16">
+                            <a href="./index.html"
+                                class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item">Home</a>
+                            <a href="./about.html"
+                                class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item">About us</a>
+                            <a href="./services.html" class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item">Our
+                                Services</a>
+                            <!-- Dropdown for Services -->
+                            <div class="relative group">
+                                <a href="#"
+                                    class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item flex items-center">
+                                    Projects
+                                    <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                <!-- Dropdown Menu -->
+                                <div
+                                    class="absolute hidden group-hover:block bg-white text-black rounded-lg mt-[2px] py-2 w-[200px] shadow-lg border">
+                                    <a href="./all_services.html" class="block px-4 py-3 hover:bg-gray-100">Ongoing
+                                        Projects</a>
+                                    <a href="./PM_service_page.html"
+                                        class="block px-4 py-3 hover:bg-gray-100">Perfomance Marketing </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Contact Button -->
+                        <div>
+                            <a href="./contact.html">
+                                <button
+                                    class="contact-button px-6 py-3 rounded flex items-center gap-2 hover:border hover:border-[#197a0a] transition-colors duration-300">
+                                    <p class="font-extrabold">Contact Us</p>
+                                    <span class="flex items-center font-extrabold">
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden mobile-nav hidden" role="dialog" aria-modal="true">
+                <div class="fixed inset-0 z-50 bg-[#0b0219] opacity-80"></div>
+                <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-2 sm:max-w-sm">
+                    <div class="flex items-center justify-between mb-4 mt-2">
+                        <a href="/" class="flex items-center">
+                            <!-- <img src="./assets/images/logoBlack.png" alt="CIEL Logo" id="logo" class="h-[50px] w-auto"> -->
+                            <p>GREEN TREE</p>
+                        </a>
+                        <button type="button" class="rounded-md text-[#0b0219] menu-close">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Mobile Dropdown -->
+                    <div class="mt-6 flow-root text-[#0b0219]">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="./index.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-bold hover:bg-gray-50 hover:text-[#0b0219]">Home</a>
+                                <a href="./about.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">About
+                                    us</a>
+
+                                <!-- Services Dropdown -->
+                                <div class="services-dropdown relative ">
+                                    <button id="dropdownToggle"
+                                        class="w-full text-left block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">
+                                        Services
+                                        <svg class="inline ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="hidden services-dropdown-content bg-white text-[#0b0219]"
+                                        id="dropdownMenu">
+                                        <a href="./all_services.html" class="block px-4 py-2 hover:bg-gray-100">All
+                                            services </a>
+                                        <a href="./PM_service_page.html"
+                                            class="block px-4 py-2 hover:bg-gray-100">Perfomance Marketing </a>
+                                        <a href="./PPC&SEM.html" class="block px-4 py-2 hover:bg-gray-100">PPC & SEM</a>
+                                        <a href="./social_media_management.html"
+                                            class="block px-4 py-2 hover:bg-gray-100">Branding & Social Media
+                                            Management</a>
+                                        <a href="./SEO.html" class="block px-4 py-2 hover:bg-gray-100">Search Engine
+                                            Optimization </a>
+                                        <a href="./website_desgin.html"
+                                            class="block px-4 py-2 hover:bg-gray-100">Website Design & Development </a>
+                                        <a href="./data_analysis.html" class="block px-4 py-2 hover:bg-gray-100">Data
+                                            Analytics</a>
+                                    </div>
+                                </div>
+
+                                <a href="./career.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">Career</a>
+                                <a href="./blog.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">Blog</a>
+                                <a href="./contact.html"
+                                    class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section id="services_sec" class="Main-section">
+            <div class="our_services_banner">
+                
+            </div>
+
+            <div class="iso container mx-auto px-4 mt-[30px]">
+                <h1 class="text-center text-[30px] sm:text-[30px] md:text-[40px] lg:text-[50px]">
+                    Quality Assurance
+                </h1>
+                <div class="iso_img block lg:flex justify-center gap-4">
+                    <img src="./assets/images/quality-assurance.jpg" alt="" width="300px">
+                    <img src="./assets/images/iso-9001-2015.jpg" alt="" width="300px">
+                    <img src="./assets/images/iso-50001-2015.jpg" alt="" width="300px">
+                </div>
+            </div>
+
+            
+            <div class="our_services mx-auto px-4 mt-[60px]">
+                <h1 class="text-center text-[30px] sm:text-[30px] md:text-[40px] lg:text-[50px]">OUR SERVICES</h1>
+                <div class="block md:grid grid-cols-2">
+                    <div class="mx-auto px-4">
+                        <h1 class="text-[15px] sm:text-[15px] md:text-[20px] lg:text-[25px]">
+                            Municipalities/corporation
+                        </h1>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_first.png" />
+                            <p>Municipal Solid Waste Management</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_first.png" />
+                            <p>Mechanized Road Cleaning / City Cleaning Services</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_first.png" />
+                            <p>Waste Collection & Transport Management</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_roof_top.png" />
+                            <p>Landfill Management</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_roof_top.png" />
+                            <p>Home Roof top unit</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_roof_top.png" />
+                            <p>Mini Solar Plant</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_roof_top.png" />
+                            <p>Rooftop for commercial</p>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <h1 class="text-[15px] sm:text-[15px] md:text-[20px] lg:text-[25px]">
+                            Integrated Facility Management Services
+                        </h1>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_first.png" />
+                            <p>Hazardous Waste Management</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_first.png" />
+                            <p>Electrical & Mechanical Services / Hard</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_first.png" />
+                            <p>Pest Control</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_roof_top.png" />
+                            <p>Integrated Pest Management</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_roof_top.png" />
+                            <p>Solar plant for Local Bodies</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_roof_top.png" />
+                            <p>Operation & Maintenance services</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <img src="./assets/images/service_icon_roof_top.png" />
+                            <p>Street Solar Lamp</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <!-- JQuery -->
+    <script src="./assets/javascript/jQuery.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- functionalities -->
+    <script src="./assets/javascript/navbar_functionality.js"></script>
+</body>
+</html>

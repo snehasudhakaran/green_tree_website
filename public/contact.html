@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us - GreenTree</title>
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Juana:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact_bg relative">
+        <h1 class="text-[20px] sm:text-[20px] md:text[30px] lg:text-[150px]">
+            Reach out to us
+        </h1>
+    </div>
+
+    <header
+        class="header fixed inset-x-0 top-0 z-50 py-4 container mx-auto px-4 w-full transition-colors duration-300 ">
+        <div class="">
+            <nav class="flex items-center justify-between" aria-label="Global">
+                <!-- Logo Section -->
+                <div class="flex lg:flex-1">
+                    <a href="/" class="flex items-center title">
+                        <!-- <img src="./assets/images/logo.png" alt="CIEL Logo" id="logo" class="h-[55px] w-auto"> -->
+                        <p>GREEN TREE</p>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex mobile-view-nav-menu">
+                    <button type="button"
+                        class="menu-button inline-flex items-center justify-center rounded-md p-2.5 text-white">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Desktop Menu Items -->
+                <div class="hidden lg:flex lg:gap-x-16 items-center">
+                    <div class="lg:flex lg:gap-x-16">
+                        <a href="./index.html"
+                            class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item">Home</a>
+                        <a href="./about.html" class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item">About
+                            us</a>
+                        <a href="./blog.html" class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item">Our
+                            Services</a>
+                        <!-- Dropdown for Services -->
+                        <div class="relative group">
+                            <a href="#"
+                                class="text-[16px] lg:text-[18px] hover:text-[#197a0a] menu-item flex items-center">
+                                Projects
+                                <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Dropdown Menu -->
+                            <div
+                                class="absolute hidden group-hover:block bg-white text-black rounded-lg mt-[2px] py-2 w-[200px] shadow-lg border">
+                                <a href="./all_services.html" class="block px-4 py-3 hover:bg-gray-100">Ongoing
+                                    Projects</a>
+                                <a href="./PM_service_page.html" class="block px-4 py-3 hover:bg-gray-100">Perfomance
+                                    Marketing </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Button -->
+                    <div>
+                        <a href="./contact.html">
+                            <button
+                                class="contact-button px-6 py-3 rounded flex items-center gap-2 hover:border hover:border-[#197a0a] transition-colors duration-300">
+                                <p class="font-extrabold">Contact Us</p>
+                                <span class="flex items-center font-extrabold">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden mobile-nav hidden" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-50 bg-[#0b0219] opacity-80"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-2 sm:max-w-sm">
+                <div class="flex items-center justify-between mb-4 mt-2">
+                    <a href="/" class="flex items-center">
+                        <!-- <img src="./assets/images/logoBlack.png" alt="CIEL Logo" id="logo" class="h-[50px] w-auto"> -->
+                        <p>GREEN TREE</p>
+                    </a>
+                    <button type="button" class="rounded-md text-[#0b0219] menu-close">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Dropdown -->
+                <div class="mt-6 flow-root text-[#0b0219]">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="./index.html"
+                                class="block px-3 py-2 rounded-md text-lg font-bold hover:bg-gray-50 hover:text-[#0b0219]">Home</a>
+                            <a href="./about.html"
+                                class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">About
+                                us</a>
+
+                            <!-- Services Dropdown -->
+                            <div class="services-dropdown relative ">
+                                <button id="dropdownToggle"
+                                    class="w-full text-left block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">
+                                    Services
+                                    <svg class="inline ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+
+                                <div class="hidden services-dropdown-content bg-white text-[#0b0219]" id="dropdownMenu">
+                                    <a href="./all_services.html" class="block px-4 py-2 hover:bg-gray-100">All services
+                                    </a>
+                                    <a href="./PM_service_page.html"
+                                        class="block px-4 py-2 hover:bg-gray-100">Perfomance Marketing </a>
+                                    <a href="./PPC&SEM.html" class="block px-4 py-2 hover:bg-gray-100">PPC & SEM</a>
+                                    <a href="./social_media_management.html"
+                                        class="block px-4 py-2 hover:bg-gray-100">Branding & Social Media Management</a>
+                                    <a href="./SEO.html" class="block px-4 py-2 hover:bg-gray-100">Search Engine
+                                        Optimization </a>
+                                    <a href="./website_desgin.html" class="block px-4 py-2 hover:bg-gray-100">Website
+                                        Design & Development </a>
+                                    <a href="./data_analysis.html" class="block px-4 py-2 hover:bg-gray-100">Data
+                                        Analytics</a>
+                                </div>
+                            </div>
+
+                            <a href="./career.html"
+                                class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">Career</a>
+                            <a href="./blog.html"
+                                class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">Blog</a>
+                            <a href="./contact.html"
+                                class="block px-3 py-2 rounded-md text-lg font-semibold hover:bg-gray-50 hover:text-[#0b0219]">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="pt-[50px] pb-[100px] container mx-auto px-4">
+        <div id="contact_us" class="block lg:grid grid-cols-2 gap-10">
+            <div class="contact_details">
+                <h2 class="text-[20px] sm:text-[20px] md:text-[30px] lg:text-[40px] font-extrabold mb-4">
+                    Exploring Solar Solutions? <br />
+                    Start Smart, Save Smart!
+                </h2>
+                <p class="text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-thin mb-4">Let’s discuss how Sunkind Energy can help you slash your bills—the intelligent and sustainable way to
+                    save!
+                </p>
+                <p class="text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-thin mb-4">
+                    Call Us <br />
+                    (+91) xxxxxxxxxx
+                </p>
+            </div>
+            <div class="form_container">
+                <form id="ct_form" class="p-12 bg-white">
+                    <div class="grid grid-rows-1 gap-5">
+                        <input type="text" placeholder="Full Name" class="px-4">
+                        <input type="email" placeholder="Email Address" class="px-4">
+                        <input type="number" placeholder="Phone" class="px-4">
+                        <textarea rows="5" placeholder="Message" class="px-4 pt-3"></textarea>
+                        <button type="button" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Submit</button>                    
+                    </div>
+
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7216826263125!2d80.24292287454782!3d13.05337941308117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e1954a00c1%3A0xa81e8d3831569a6f!2sCIEL%20INFITECH!5e0!3m2!1sen!2sin!4v1735138280476!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+
+
+    <!-- footer -->
+    <div class="bg-[#197a0a]">
+        <footer class=" container mx-auto px-4 pb-[50px] pt-5 ">
+
+            <hr class="pb-[50px] ">
+            <div
+                class="container-fluid flex justify-between gap-y-[30px] flex-col lg:flex-row text-center text-[#3333333] pt-[5px]  pb-[5px] lg:pt-0 lg:pb-0  ">
+                <div class="text-left">
+                    <h1 class="text-[20px] lg:text-[24px] font-extrabold mb-3">Office Address</h1>
+                    <div class="flex flex-col flex-col gap-2 ">
+                        <a href="./index.html" class="flex text-[18px] ">(+91) 8800-228-181</a>
+                        <a href="./career.html" class="flex text-[18px]">info@sunkind.in
+                        </a>
+                        <p class="flex text-[18px]">9th Floor, Tower 1, 904-905, DLF CORPORATE GREENS,<br>
+                            Southern Peripheral Rd, Sector 74A, Haryana 122004,<br>
+                            Gurugram</p>
+                    </div>
+                    <div class="flex gap-5 items-center mt-4">
+                        <a href="mailto:" class="text-white text-[30px]">
+                            <ion-icon name="mail"></ion-icon>
+                        </a>
+                        <a href="./" target="_blank" class="text-white text-[30px]">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="./" target="_blank" class="text-white text-[30px]">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="./" target="_blank" class="text-white text-[30px]">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="./" target="_blank" class="text-white text-[30px]">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="copyRight text-left">
+                    <h1 class="text-[20px] lg:text-[24px] font-extrabold mb-3">Useful Links</h1>
+                    <div class="flex flex-col flex-col gap-2 ">
+                        <a href="./index.html" class="flex text-[18px]">Home </a>
+                        <a href="./about.html" class="flex text-[18px]">About Us </a>
+                        <a href="./services.html" class=" flex text-[18px]">Our Services </a>
+                        <a href="./career.html" class="flex text-[18px]">Projects </a>
+                        <a href="./blog.html" class="flex text-[18px]">Contact Us</a>
+                    </div>
+                </div>
+                <div class="copyRight text-left">
+                    <h1 class="text-[20px] lg:text-[24px] font-extrabold mb-3">Our Services</h1>
+                    <div class="flex flex-col flex-col gap-2 ">
+                        <a href="./index.html" class="flex text-[18px]">Solar Rooftop</a>
+                        <a href="./about.html" class="flex text-[18px]">Ground Mount Solar</a>
+                        <a href="./all_services.html" class=" flex text-[18px]">Open Access Solar Power Plant</a>
+                        <a href="./career.html" class="flex text-[18px]">Capex Opex Solar Plants
+                        </a>
+                        <a href="./blog.html" class="flex text-[18px]">Solar Maintenance Plant</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
